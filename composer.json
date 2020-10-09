@@ -5,8 +5,9 @@
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",
 	"require": {
-		"php": ">=7.2",
-		"codeigniter4/framework": "^4"
+		"php": ">=7.3",
+		"codeigniter4/framework": "^4",
+		"firebase/php-jwt": "^5.2"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "^1.9@dev",

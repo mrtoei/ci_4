@@ -1,9 +1,8 @@
-<?php
-namespace App\Controllers;
-use CodeIgniter\Controller;
+<?php namespace App\Controllers;
+
 use App\Models\Product_model;
 
-class Product extends Controller
+class Product extends BaseController
 {
     public function __construct()
     {
@@ -12,6 +11,7 @@ class Product extends Controller
 
     public function index()
     {
-        return $this->response->setJSON($this->product->findData()); 
+       $rows = $this->product->findAll();
+       return $this->success($rows);
     }
 }

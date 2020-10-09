@@ -1,6 +1,8 @@
 <?php namespace App\Models;
 
-class Product_model extends MY_model
+use CodeIgniter\Model;
+
+class Product_model extends Model
 {
     protected $table = 'cars';
 }
